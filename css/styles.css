@@ -1,0 +1,628 @@
+/****************************************/
+/*************** Global *****************/
+/****************************************/
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(85, 85, 85);
+  margin: 50px auto;
+}
+.main-wrapper{
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
+::selection{
+  background-color: #e4a28d;
+  color: white;
+}
+a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+  font-size: 12px;
+}
+h1{
+  font-size: 43px;
+  font-weight: 300;
+}
+h2{
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+h3{
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+span{
+  font-weight: bold;
+}
+/**************** Boutons ***************/
+.btn{
+  padding: 15px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-block;
+}
+.btn--white{
+  background-color: white;
+}
+.btn--pink{
+  background-color: #e4a28d;
+  color: white;
+}
+/****************************************/
+/************** Mobile  *****************/
+/****************************************/
+
+/**************** Header ***************/
+header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.logo{
+  width: 280px;
+  margin-bottom: 20px;
+}
+/* Burger Menu */
+.burger-menu{
+  height: 30px;
+  width: 30px;
+  order: 1;
+  position: relative;
+  cursor: pointer;
+}
+.burger-menu div{
+  height: 3px;
+  width: 70%;
+  background-color: #555555;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.burger-menu .barre-top{
+  top: 30%;
+}
+.burger-menu .barre-bottom{
+  top: 70%;
+}
+/* Main nav + hover */
+.main-nav{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+  border-top: 1px solid #E1AE9E;
+  position: absolute;
+  left: -25px;
+  bottom: -100vh;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+}
+.main-nav a{
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 65px;
+  margin-left: 20px;
+  transition: .15s ease-in-out;
+}
+
+.main-nav a:first-child{
+  margin-top: 30px;
+}
+.main-nav > div{
+  margin-left: 15px;
+}
+.main-nav > div > a:hover{
+  opacity: 1;
+}
+header:hover .main-nav{
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+}
+.burger-menu:hover div{
+  background-color: #E1AE9E;
+}
+/**************** Section High Quality ***************/
+.high-qual-section{
+  margin-bottom: 20px;
+}
+.high-qual-section-content{
+  background: url(../img/confettis.svg) fixed center -500px/cover no-repeat,#FED1DE;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.high-qual-section-content div{
+  order: -1;
+  align-self: flex-start;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 80%;
+}
+.high-qual-section-content img{
+  width: 450px;
+}
+/* Mise en forme */
+.high-qual-section-content div p{
+  padding: 40px 0 100px;
+  font-size: 23px;
+  font-weight: 300;
+  background-color: #FED1DE;
+  margin-top: 0;
+}
+.high-qual-section-content div h1{
+  background-color: #FED1DE;
+  margin-bottom: 0;
+}
+/**************** Section Small sections ***************/
+/* Images */
+.small-sections__img{
+  width: 100%;
+  height: 200px;
+}
+.parties .small-sections__img{
+  background: url(../img/parties.jpg) center/cover no-repeat;
+}
+.weddings .small-sections__img{
+  background: url(../img/wedding.jpg) center/cover no-repeat;
+}
+.christenings .small-sections__img{
+  background: url(../img/heart.jpg) center/cover no-repeat;
+}
+.birthdays .small-sections__img{
+  background: url(../img/full-balloons.jpg) center/cover no-repeat;
+}
+/* Marge entre sections */
+.small-sections > section{
+  margin-bottom: 60px;
+}
+/* Marges textes et mise en forme*/
+.small-sections h2,.small-sections p,.small-sections a{
+  margin-left: 20px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.small-sections p{
+  width: 70%;
+  font-size: 13px;
+  line-height: 20px;
+}
+.small-sections h2{
+  text-transform: uppercase;
+}
+/**************** Section About Me ***************/
+.aboutme{
+  margin-bottom: 200px;
+}
+/* Image */
+.aboutme__img{
+  height: 500px;
+  background: url(../img/about.jpg) center/cover;
+  position: relative;
+  margin: 100px 0 50px;
+}
+/* Image de profil Katie */
+.aboutme__profile_picture{
+  height: 170px;
+  width: 170px;
+  background: url(../img/katie-cut-out.png) center/cover;
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  border-radius: 100px;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 22%);
+  background-color: #F7F7F7;
+}
+/* Label image de profil Katie */
+.aboutme__profile_picture::after{
+  content: 'Katie Hibbs';
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 65%;
+  transform: translate(-50%,0);
+  width:120px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+/* Mise en forme */
+.aboutme__txt h2{
+  font-size: 34px;
+  font-weight: 300;
+}
+.aboutme__txt p{
+  line-height: 24px;
+  font-size: 14px;
+}
+.aboutme__txt .citation{
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 30px 0 50px;
+  border-left: 1px solid #e4a28d;
+  padding-left: 10px;
+}
+/**************** Section Make it Special ***************/
+/* Mise en forme */
+.make-it-special h2{
+  font-size: 34px;
+  font-weight: 300;
+}
+.make-it-special p{
+  line-height: 24px;
+  font-size: 14px;
+}
+.make-it-special ul{
+  margin: 30px 0 50px;
+}
+.make-it-special li{
+  margin-bottom: 15px;
+}
+/* Image */
+.make-it-special__img{
+  height: 500px;
+  background: url(../img/blue.jpg) center/cover;
+  margin-top: 100px;
+}
+.make-it-special{
+  margin-bottom: 100px;
+}
+/**************** Section Collections ***************/
+/* Marge section */
+.collections{
+  margin-bottom: 50px;
+}
+/* Titre section */
+.collections__title{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.collections__title h2{
+  font-size: 34px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.collections__title h3{
+  font-size: 24px;
+  margin: 0;
+}
+/* Placement ballons 3 par lignes */
+.wrapper-balloons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.balloons{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 20px;
+}
+/* Mise en forme texte ballons */
+.balloon__name{
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  /* width: 60%; */
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.balloon__price{
+  font-size: 12px;
+}
+/* Images ballons */
+.balloon__img{
+  height: 160px;
+  width: 160px;
+  border-radius: 100px;
+  margin: 30px;
+}
+.balloons:nth-of-type(1) .balloon__img {
+  background: url(../img/price1.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(2) .balloon__img{
+  background: url(../img/price2.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(3) .balloon__img{
+  background: url(../img/price3.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(4) .balloon__img{
+  background: url(../img/price4.jpg) center/cover no-repeat;
+}
+.balloons:nth-of-type(5) .balloon__img{
+  background: url(../img/price5.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(6) .balloon__img{
+  background: url(../img/price6.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(7) .balloon__img{
+  background: url(../img/price7.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(8) .balloon__img{
+  background: url(../img/price8.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(9) .balloon__img{
+  background: url(../img/price9.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(10) .balloon__img{
+  background: url(../img/price10.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(11) .balloon__img{
+  background: url(../img/price11.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(12) .balloon__img{
+  background: url(../img/price12.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(13) .balloon__img{
+  background: url(../img/price13.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(14) .balloon__img{
+  background: url(../img/price14.jpeg) center/cover no-repeat;
+}
+.balloons:nth-of-type(15) .balloon__img{
+  background: url(../img/price15.jpg) center/cover no-repeat;
+}
+.balloons:nth-of-type(16) .balloon__img{
+  background: url(../img/price16.jpg) center/cover no-repeat;
+}
+/**************** Section Couleurs ***************/
+.colours{
+  text-align: center;
+  align-self: center;
+  margin-bottom: 50px;
+}
+.colours p{
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.colours .btn--white{
+  border: 1px solid #55555552;
+}
+/**************** Section Areas ***************/
+.areas{
+  text-align: center;
+  margin-bottom: 250px;
+}
+.areas h2{
+  font-size: 34px;
+}
+
+.areas ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: inside;
+  justify-content: space-around;
+}
+.areas ul li:first-child{
+  list-style: none;
+}
+.areas ul li{
+  margin-right: 20px;
+  font-size: 24px;
+  
+}
+.areas p{
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-style: italic;
+  font-weight: bold;
+}
+/**************** my Balloons ****************/
+.my-balloons{
+  background-color: #FED1DE;
+  height: 400px;
+}
+.my-balloons__confettis{
+  height: 100%;
+  background: url(../img/confettis.svg) center/cover no-repeat;
+  background-position-y: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-balloons h1{
+  margin: 0;
+  font-size: 40px;
+  color: black;
+}
+.my-balloons p{
+  margin: 20px 0px 40px;
+  font-size: 14px;
+  color: black;
+}
+/****************************************/
+/************** Desktop  ****************/
+/****************************************/
+@media screen and (min-width:750px){
+  .main-wrapper{
+    max-width: 1200px;
+  }
+  /************** Main Nav ****************/
+  .burger-menu{
+    display: none;
+  }
+  /* Positions */
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+  .main-nav{
+    background-color: transparent;
+    height: auto;
+    position: static;
+    display: flex;
+    transform: translate(0);
+    border: transparent;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  /* Mise en forme */
+  .main-nav a{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-right: 50px;
+    
+  }
+  .main-nav a:hover{
+    color: #e1ae9e;
+  }
+  .main-nav > div{
+    display: flex;
+  }
+  .main-nav > div a{
+    opacity: 0.5;
+  }
+  .main-nav > div a:hover{
+    opacity: 0.8;
+  }
+  .main-nav a:last-child{
+    margin-right: 0px;
+  }
+  /************** Section High Qual ****************/
+  .high-qual-section-content{
+    flex-direction: row-reverse;
+    align-items: center;
+    /* height: 500px; */
+  }
+  .high-qual-section-content div{
+    align-self: center;
+    margin-right: 20px;
+  }
+  .high-qual-section-content img{
+    align-self: center;
+    width: auto;
+    height: 600px;
+  }
+  .high-qual-section{
+    margin-bottom: 5px;
+  }
+  /************** Small Sections ****************/
+  .small-sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .small-sections section{
+    width: calc((100% / 3) - 5px);
+    position: relative;
+    overflow: hidden;
+  }
+  .small-sections img{
+    height: 100%;
+  }
+  .small-sections__img:not(:last-child){
+    filter: grayscale(1) ;
+    height: 600px;
+  }
+  .birthdays .small-sections__img{
+    filter: grayscale(1) ;
+    height: 400px;
+    margin-top: 5px;
+  }
+  .small-sections section:last-child{
+    width: 100%;
+  }
+  .small-sections__txt{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .small-sections section:hover div:last-child{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .small-sections section:hover div:first-child{
+    filter: grayscale(0);
+  }
+  .small-sections > section {
+    margin-bottom: 0px;
+  }
+  /************** Section aboutme ****************/
+  .aboutme{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .aboutme .aboutme__img{
+    width: 50%;
+  }
+  .aboutme__txt{
+    width: 30%;
+    margin-left: 50px;
+  }
+  /************** Section Make it special ****************/
+  .make-it-special{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+  .make-it-special .make-it-special__img{
+    width: 50%;
+  }
+  .make-it-special__txt{
+    width: 50%;
+    margin-right: 50px;
+  }
+  /************** Section Ventes ballons ****************/
+  .balloons{
+    width: 200px;
+    margin: 0;
+  }
+  .wrapper-balloons{
+    justify-content: center;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+  /************** Section Areas ****************/
+  .areas{
+    margin-top: 150px;
+  }
+  .areas h2{
+    font-size: 28px;
+    font-weight: 300;
+  }
+}
+
+
+
+
