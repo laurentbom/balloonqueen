@@ -138,7 +138,7 @@ header:hover .main-nav{
   margin-bottom: 20px;
 }
 .high-qual-section-content{
-  background: url(../img/confettis.svg) fixed center -500px/cover no-repeat,#FED1DE;
+  background: url(img/confettis.svg) fixed center -500px/cover no-repeat,#FED1DE;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -172,16 +172,16 @@ header:hover .main-nav{
   height: 200px;
 }
 .parties .small-sections__img{
-  background: url(../img/parties.jpg) center/cover no-repeat;
+  background: url(img/parties.jpg) center/cover no-repeat;
 }
 .weddings .small-sections__img{
-  background: url(../img/wedding.jpg) center/cover no-repeat;
+  background: url(img/wedding.jpg) center/cover no-repeat;
 }
 .christenings .small-sections__img{
-  background: url(../img/heart.jpg) center/cover no-repeat;
+  background: url(img/heart.jpg) center/cover no-repeat;
 }
 .birthdays .small-sections__img{
-  background: url(../img/full-balloons.jpg) center/cover no-repeat;
+  background: url(img/full-balloons.jpg) center/cover no-repeat;
 }
 /* Marge entre sections */
 .small-sections > section{
@@ -208,7 +208,7 @@ header:hover .main-nav{
 /* Image */
 .aboutme__img{
   height: 500px;
-  background: url(../img/about.jpg) center/cover;
+  background: url(img/about.jpg) center/cover;
   position: relative;
   margin: 100px 0 50px;
 }
@@ -216,7 +216,7 @@ header:hover .main-nav{
 .aboutme__profile_picture{
   height: 170px;
   width: 170px;
-  background: url(../img/katie-cut-out.png) center/cover;
+  background: url(img/katie-cut-out.png) center/cover;
   position: absolute;
   top: -40px;
   right: 30px;
@@ -275,7 +275,7 @@ header:hover .main-nav{
 /* Image */
 .make-it-special__img{
   height: 500px;
-  background: url(../img/blue.jpg) center/cover;
+  background: url(img/blue.jpg) center/cover;
   margin-top: 100px;
 }
 .make-it-special{
@@ -335,52 +335,52 @@ header:hover .main-nav{
   margin: 30px;
 }
 .balloons:nth-of-type(1) .balloon__img {
-  background: url(../img/price1.jpeg) center/cover no-repeat;
+  background: url(img/price1.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(2) .balloon__img{
-  background: url(../img/price2.jpeg) center/cover no-repeat;
+  background: url(img/price2.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(3) .balloon__img{
-  background: url(../img/price3.jpeg) center/cover no-repeat;
+  background: url(img/price3.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(4) .balloon__img{
-  background: url(../img/price4.jpg) center/cover no-repeat;
+  background: url(img/price4.jpg) center/cover no-repeat;
 }
 .balloons:nth-of-type(5) .balloon__img{
-  background: url(../img/price5.jpeg) center/cover no-repeat;
+  background: url(img/price5.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(6) .balloon__img{
-  background: url(../img/price6.jpeg) center/cover no-repeat;
+  background: url(img/price6.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(7) .balloon__img{
-  background: url(../img/price7.jpeg) center/cover no-repeat;
+  background: url(img/price7.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(8) .balloon__img{
-  background: url(../img/price8.jpeg) center/cover no-repeat;
+  background: url(img/price8.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(9) .balloon__img{
-  background: url(../img/price9.jpeg) center/cover no-repeat;
+  background: url(img/price9.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(10) .balloon__img{
-  background: url(../img/price10.jpeg) center/cover no-repeat;
+  background: url(img/price10.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(11) .balloon__img{
-  background: url(../img/price11.jpeg) center/cover no-repeat;
+  background: url(img/price11.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(12) .balloon__img{
-  background: url(../img/price12.jpeg) center/cover no-repeat;
+  background: url(img/price12.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(13) .balloon__img{
-  background: url(../img/price13.jpeg) center/cover no-repeat;
+  background: url(img/price13.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(14) .balloon__img{
-  background: url(../img/price14.jpeg) center/cover no-repeat;
+  background: url(img/price14.jpeg) center/cover no-repeat;
 }
 .balloons:nth-of-type(15) .balloon__img{
-  background: url(../img/price15.jpg) center/cover no-repeat;
+  background: url(img/price15.jpg) center/cover no-repeat;
 }
 .balloons:nth-of-type(16) .balloon__img{
-  background: url(../img/price16.jpg) center/cover no-repeat;
+  background: url(img/price16.jpg) center/cover no-repeat;
 }
 /**************** Section Couleurs ***************/
 .colours{
@@ -437,7 +437,7 @@ header:hover .main-nav{
 }
 .my-balloons__confettis{
   height: 100%;
-  background: url(../img/confettis.svg) center/cover no-repeat;
+  background: url(img/confettis.svg) center/cover no-repeat;
   background-position-y: 50px;
   display: flex;
   flex-direction: column;
